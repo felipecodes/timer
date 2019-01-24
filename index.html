@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>TIMER</title>
+</head>
+<style>
+  *{margin:0; padding: 0; box-sizing: border-box;}
+  .container{
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto; 
+    padding: 0 2%;
+    background: white;
+    align-items: flex-start;
+    }
+  body{
+    background: #212121;
+  }
+
+  h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 40px;
+   
+  }
+  input{
+    margin-top: 100px;
+    margin-right: 100px;
+    width: 300px;
+    height: 60px;
+    padding-left: 140px;
+  }
+
+  button{
+    display: inline-block;
+    width: 80px;
+    height: 60px;
+    background: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 18px;
+  }
+
+
+  button:nth-of-type(1){
+    background: green;
+  }
+  button:nth-of-type(3){
+    background: #ccc;
+  }
+
+
+  .w100{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .w50{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+
+  .w50 button{
+    margin: 0 20px;
+  }
+
+
+
+@media screen and (max-width:768px){
+  input{
+    margin-right:55px;
+    margin-bottom: 90px;
+}
+  
+
+</style>
+
+<body>
+ <div class="container">
+   <div class="w100">
+   <h1>TIMER</h1>
+    <input type="text" value="0" data-js="timer">
+  </div>
+ </div>
+
+ <div class="container">
+   <div class="w50">
+    <button data-js="start">Start</button>
+    <button data-js="stop">Stop</button>
+    <button data-js="reset">Reset</button>
+  </div>
+  </div>
+   
+ 
+  <script src="js.js"></script>
+</body>
+</html>
